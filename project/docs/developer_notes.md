@@ -1,3 +1,19 @@
+
+# Developer Notes
+
+## Overview
+This project captures, parses, and analyzes network packets, providing details on Ethernet, IP, TCP, UDP, ICMP, and ARP protocols.
+
+## Components
+
+- **capture.c**: Responsible for initiating packet capture using raw sockets and passing the captured data to parsing functions.
+- **ethernet.c**: Parses Ethernet frames and determines if the packet should be passed to IP, ARP, or other protocol-specific parsers.
+- **ip.c**: Parses IP headers, identifying the protocol type (TCP, UDP, ICMP) and handing over to the respective protocol parser.
+- **tcp.c and udp.c**: Handle parsing of TCP and UDP headers, extracting and displaying essential fields.
+- **icmp.c**: Extracts ICMP header information, useful for analyzing ping requests and other ICMP messages.
+- **arp.c**: Extracts ARP packet information, including sender and target MAC/IP addresses.
+- **packet_filter.c**: Contains filtering functions to allow selective packet capture and analysis based on protocol, IP, MAC, etc.
+
 .
 ├── src
 │   ├── capture.c           # Main packet capture logic
