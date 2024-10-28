@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 void parse_ethernet_frame(const unsigned char *buffer) { // Define a function to parse an Ethernet frame.
-    struct ethhdr *eth = (struct ethhdr *)buffer; // Cast the input buffer to an Ethernet header structure.
+    struct ethhdr *eth = (struct ethhdr *)buffer;        // Cast the input buffer to an Ethernet header structure.
 
     printf("Ethernet Header\n"); // Print the header title for Ethernet information.
     
