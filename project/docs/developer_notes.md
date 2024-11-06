@@ -24,7 +24,7 @@ This project captures, parses, and analyzes network packets, providing details o
 │   │   ├── tcp.c           # TCP header parsing
 │   │   ├── udp.c           # UDP header parsing
 │   │   ├── icmp.c          # ICMP header parsing
-│   │   └── arp.c           # ARP header parsing (optional, for ARP packet capture)
+│   │   └── arp.c           # ARP header parsing
 │   ├── utils
 │   │   ├── endian_utils.c  # Functions for endian conversion (e.g., custom ntohs, ntohl)
 │   │   └── display_utils.c # Helper functions to format and display parsed data
@@ -56,5 +56,4 @@ This project captures, parses, and analyzes network packets, providing details o
 ├── Makefile                # Build instructions for the entire project
 ├── README.md               # Project documentation and setup instructions
 └── docs
-    ├── protocol_docs       # Protocol details, header descriptions, etc.
     └── developer_notes.md  # Development guidelines and future improvement notes
